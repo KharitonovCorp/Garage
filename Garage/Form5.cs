@@ -12,6 +12,7 @@ using Word = Microsoft.Office.Interop.Word;
 
 namespace Garage
 {
+    //test commit
     public partial class Form5 : Form
     {
         string repair = "repair";
@@ -116,9 +117,9 @@ namespace Garage
             {
                 temp = dataGridView1.SelectedCells[0].Value.ToString();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.ToString());
+                
             }
         }
 

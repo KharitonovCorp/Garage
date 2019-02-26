@@ -188,9 +188,9 @@ namespace Garage
                 button2.Enabled = true;
                 button8.Enabled = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.ToString());
+
             }
         }
 
@@ -207,9 +207,9 @@ namespace Garage
                 button5.Enabled = true;
                 button7.Enabled = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.ToString());
+
             }
         }
 
