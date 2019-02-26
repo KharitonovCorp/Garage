@@ -151,14 +151,14 @@ namespace Garage
             OleDbCommand sql1 = new OleDbCommand("SELECT repair_id AS [id], (SELECT mechanic_surname FROM mechanic WHERE repair.mechanic_id = mechanic.mechanic_id) AS [фамилия мастера], (SELECT mechanic_name FROM mechanic WHERE repair.mechanic_id = mechanic.mechanic_id) AS [имя мастера], (SELECT mechanic_patronymic FROM mechanic WHERE repair.mechanic_id = mechanic.mechanic_id) AS [отчество], (SELECT car_name FROM car WHERE repair.car_id = car.car_id) AS [модель авто], (SELECT car_mark FROM car WHERE repair.car_id = car.car_id) AS [марка авто], repair_date AS [дата работы], repair_cost AS [цена] FROM repair WHERE repair_id = " + temp +";", OleDbcon1);
             sql1.ExecuteNonQuery();
             OleDbDataReader reader = sql1.ExecuteReader();
-            while (reader.Read())
-            {
+
             Word.Application wordApp = new Word.Application();
             Word.Document doc = wordApp.Documents.Add();
+            Word.Range range = doc.Range();
             wordApp.Visible = true;
 
-            Word.Range range = doc.Range();
-            doc.SaveAs();
+            while (reader.Read())
+            {
                 range.Text = "Номер сделки: "+ reader["id"].ToString() +
                 "\nФамилия мастера: " + reader["фамилия мастера"].ToString() +
                 "\nИмя мастера: " + reader["имя мастера"].ToString() +
