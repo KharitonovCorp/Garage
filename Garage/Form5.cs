@@ -12,7 +12,6 @@ using Word = Microsoft.Office.Interop.Word;
 
 namespace Garage
 {
-    //test commit
     public partial class Form5 : Form
     {
         string repair = "repair";

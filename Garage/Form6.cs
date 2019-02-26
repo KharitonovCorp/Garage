@@ -105,6 +105,61 @@ namespace Garage
 
             }
 
+            ///////////////////////////////////////////////////////////////////////////
+
+            var mechanic = (Worksheet)ExcelApp.Sheets.Add(After: ExcelApp.ActiveSheet);
+            mechanic.Name = "mechanic";
+
+            var cellsD2 = (Microsoft.Office.Interop.Excel.Range)mechanic.Cells;
+
+            cellsD2.HorizontalAlignment = Microsoft.Office.Interop.Excel.Constants.xlCenter;
+
+            mechanic.Cells[1, 1] = "id";
+
+            mechanic.Cells[1, 2] = "Номер механика";
+
+            mechanic.Cells[1, 3] = "Фамилия механика";
+
+            mechanic.Cells[1, 4] = "Имя механика";
+
+            mechanic.Cells[1, 5] = "Отчество";
+
+            mechanic.Cells[1, 6] = "Стаж";
+
+            mechanic.Cells[1, 7] = "Разряд";
+
+            string queryD2 = "SELECT * FROM mechanic";
+
+            OleDbCommand commandD2 = new OleDbCommand(queryD2, myConnection);
+
+            OleDbDataReader readerD2 = commandD2.ExecuteReader();
+
+            int temp2 = 2;
+
+            while (readerD2.Read())
+
+            {
+
+                mechanic.Cells[temp2, 1] = readerD2[0].ToString();
+
+                mechanic.Cells[temp2, 2] = readerD2[1].ToString();
+
+                mechanic.Cells[temp2, 3] = readerD2[2].ToString();
+
+                mechanic.Cells[temp2, 4] = readerD2[3].ToString();
+
+                mechanic.Cells[temp2, 5] = readerD2[4].ToString();
+
+                mechanic.Cells[temp2, 6] = readerD2[5].ToString();
+
+                mechanic.Cells[temp2, 7] = readerD2[6].ToString();
+
+                temp2++;
+
+            }
+
+            ///////////////////////////////////////////////////////////////////////////
+
             ExcelApp.Visible = true;
             readerD.Close();
 
