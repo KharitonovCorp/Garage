@@ -158,6 +158,55 @@ namespace Garage
 
             }
 
+            /////////////////////////////////////////////////////////////////////////////////
+
+            var repair = (Worksheet)ExcelApp.Sheets.Add(After: ExcelApp.ActiveSheet);
+            repair.Name = "repair";
+
+            var cellsD3 = (Microsoft.Office.Interop.Excel.Range)mechanic.Cells;
+
+            cellsD3.HorizontalAlignment = Microsoft.Office.Interop.Excel.Constants.xlCenter;
+
+            repair.Cells[1, 1] = "id";
+
+            repair.Cells[1, 2] = "id механика";
+
+            repair.Cells[1, 3] = "id машины";
+
+            repair.Cells[1, 4] = "Дата починки";
+
+            repair.Cells[1, 5] = "Время починки";
+
+            repair.Cells[1, 6] = "Стоимость";
+
+            string queryD3 = "SELECT * FROM repair";
+
+            OleDbCommand commandD3 = new OleDbCommand(queryD3, myConnection);
+
+            OleDbDataReader readerD3 = commandD3.ExecuteReader();
+
+            int temp3 = 2;
+
+            while (readerD3.Read())
+
+            {
+
+                repair.Cells[temp3, 1] = readerD3[0].ToString();
+
+                repair.Cells[temp3, 2] = readerD3[1].ToString();
+
+                repair.Cells[temp3, 3] = readerD3[2].ToString();
+
+                repair.Cells[temp3, 4] = readerD3[3].ToString();
+
+                repair.Cells[temp3, 5] = readerD3[4].ToString();
+
+                repair.Cells[temp3, 6] = readerD3[5].ToString();
+
+                temp3++;
+
+            }
+
             ///////////////////////////////////////////////////////////////////////////
 
             ExcelApp.Visible = true;
