@@ -1,0 +1,103 @@
+ Microsoft.Office.Interop.Excel.Application xlApp = new Microsoft.Office.Interop.Excel.Application();
+            Workbook xlWorkBook;
+            Worksheet xlWorkSheet;
+            if (xlApp == null)
+            {
+                MessageBox.Show("Ошибка подключения к Excell");
+                return;
+            }
+            else
+            {
+                string con1 = "Provider= Microsoft.Jet.OLEDB.4.0; Data Source=Garage.mdb;";
+                OleDbConnection oleDbConn1 = new OleDbConnection(con1);
+                System.Data.DataTable dt1 = new System.Data.DataTable();
+
+                oleDbConn1.Open();
+                OleDbCommand sql1 = new OleDbCommand("SELECT * FROM mechanic;");
+                sql1.Connection = oleDbConn1;
+                sql1.ExecuteNonQuery();
+
+                OleDbDataAdapter da1 = new OleDbDataAdapter(sql1);
+                da1.Fill(dt1);
+
+                dataGridView1.DataSource = dt1;
+
+                xlWorkBook = xlApp.Workbooks.Add();
+                xlWorkSheet = xlWorkBook.Worksheets.get_Item(1);
+                xlWorkSheet.StandardWidth = 24;
+
+                xlWorkSheet.Cells[1, 1] = "mechanic_id";
+                xlWorkSheet.Cells[1, 2] = "mechanic_number";
+                xlWorkSheet.Cells[1, 3] = "mechanic_surname";
+                xlWorkSheet.Cells[1, 4] = "mechanic_name";
+                xlWorkSheet.Cells[1, 5] = "mechanic_patronymic";
+                xlWorkSheet.Cells[1, 6] = "mechanic_exp";
+                xlWorkSheet.Cells[1, 7] = "mechanic_rank";
+
+                for (int i = 0; i < dataGridView1.ColumnCount; i++)
+                {
+                    for (int j = 0; j < dataGridView1.RowCount - 1; j++)
+                    {
+                        xlWorkSheet.Cells[j + 2, i + 1] = (dataGridView1[i, j].Value).ToString();
+                    }
+                }
+
+                OleDbCommand sql2 = new OleDbCommand("SELECT * FROM car;");
+                sql2.Connection = oleDbConn1;
+                sql2.ExecuteNonQuery();
+                System.Data.DataTable dt2 = new System.Data.DataTable();
+                OleDbDataAdapter da2 = new OleDbDataAdapter(sql2);
+                da2.Fill(dt2);
+
+                dataGridView1.DataSource = dt2;
+
+                xlWorkSheet = xlWorkBook.Worksheets.get_Item(2);
+                xlWorkSheet.StandardWidth = 24;
+
+                xlWorkSheet.Cells[1, 1] = "car_id";
+                xlWorkSheet.Cells[1, 2] = "car_number";
+                xlWorkSheet.Cells[1, 3] = "car_mark";
+                xlWorkSheet.Cells[1, 4] = "car_name";
+                xlWorkSheet.Cells[1, 5] = "car_type";
+                xlWorkSheet.Cells[1, 6] = "car_year";
+
+                for (int i = 0; i < dataGridView1.ColumnCount; i++)
+                {
+                    for (int j = 0; j < dataGridView1.RowCount - 1; j++)
+                    {
+                        xlWorkSheet.Cells[j + 2, i + 1] = (dataGridView1[i, j].Value).ToString();
+                    }
+                }
+
+                OleDbCommand sql3 = new OleDbCommand("SELECT repair_id AS [id], (SELECT mechanic_surname FROM mechanic WHERE repair.mechanic_id = mechanic.mechanic_id) AS [фамилия мастера], (SELECT mechanic_name FROM mechanic WHERE repair.mechanic_id = mechanic.mechanic_id) AS [имя мастера], (SELECT mechanic_patronymic FROM mechanic WHERE repair.mechanic_id = mechanic.mechanic_id) AS [отчество], (SELECT car_name FROM car WHERE repair.car_id = car.car_id) AS [модель авто], (SELECT car_mark FROM car WHERE repair.car_id = car.car_id) AS [марка авто], repair_date AS [дата работы], repair_cost AS [цена] FROM repair;");
+                sql3.Connection = oleDbConn1;
+                sql3.ExecuteNonQuery();
+                System.Data.DataTable dt3 = new System.Data.DataTable();
+                OleDbDataAdapter da3 = new OleDbDataAdapter(sql3);
+                da3.Fill(dt3);
+
+                dataGridView1.DataSource = dt3;
+
+                xlWorkSheet = xlWorkBook.Worksheets.get_Item(3);
+                xlWorkSheet.StandardWidth = 24;
+
+                xlWorkSheet.Cells[1, 1] = "repair_id";
+                xlWorkSheet.Cells[1, 2] = "mechanic_id";
+                xlWorkSheet.Cells[1, 3] = "car_id";
+                xlWorkSheet.Cells[1, 4] = "repair_date";
+                xlWorkSheet.Cells[1, 5] = "repaie_time";
+                xlWorkSheet.Cells[1, 6] = "repair_cost";
+
+                for (int i = 0; i < dataGridView1.ColumnCount; i++)
+                {
+                    for (int j = 0; j < dataGridView1.RowCount - 1; j++)
+                    {
+                        xlWorkSheet.Cells[j + 2, i + 1] = (dataGridView1[i, j].Value).ToString();
+                    }
+                }
+
+                xlApp.Visible = true;
+                xlApp.UserControl = true;
+
+                oleDbConn1.Close();
+            }
