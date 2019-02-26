@@ -213,8 +213,11 @@ namespace Garage
             readerD.Close();
 
             car.Columns.AutoFit();
-
             car.Rows.AutoFit();
+            mechanic.Columns.AutoFit();
+            mechanic.Rows.AutoFit();
+            repair.Columns.AutoFit();
+            repair.Rows.AutoFit();
             ///////////////////////////////////////////////////////////////////////////
 
         }
