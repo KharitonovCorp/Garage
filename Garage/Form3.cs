@@ -266,6 +266,7 @@ namespace Garage
 
                 if (table == "car")
                 {
+                    dt.Columns["car_id"].ColumnName = "id";
                     dt.Columns["car_number"].ColumnName = "номер авто";
                     dt.Columns["car_mark"].ColumnName = "марка";
                     dt.Columns["car_name"].ColumnName = "модель";
@@ -276,6 +277,7 @@ namespace Garage
 
                 if (table == "mechanic")
                 {
+                    dt.Columns["mechanic_id"].ColumnName = "id";
                     dt.Columns["mechanic_number"].ColumnName = "номер";
                     dt.Columns["mechanic_surname"].ColumnName = "фамилия";
                     dt.Columns["mechanic_name"].ColumnName = "имя";
