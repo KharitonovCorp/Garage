@@ -10,14 +10,17 @@ using System.Windows.Forms;
 
 namespace Garage
 {
+    //Главная форма, меню навигации
     public partial class Form1 : Form
     {
+        //Инициализация элементов и компонентов формы
         public Form1()
         {
             InitializeComponent();
             InitializeInterface();
         }
 
+        //Метод иницилизации элементов формы
         private void InitializeInterface()
         {
             this.Text = "СУБД Автомастерская";
@@ -30,7 +33,7 @@ namespace Garage
             button6.Text = "Информация о разработчике";
             button7.Text = "Выход";
         }
-
+        //Кнопка выхода из программного приложения
         private void button7_Click(object sender, EventArgs e)
         {
             var result = new DialogResult();
@@ -41,6 +44,7 @@ namespace Garage
             }
         }
 
+        //Кнопка перехода на форму добавления данных
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -48,6 +52,7 @@ namespace Garage
             AddForm.Show();
         }
 
+        //Кнопка перехода на форму редактирования и удаления данных
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -55,6 +60,7 @@ namespace Garage
             EditDelForm.Show();
         }
 
+        //Кнопка перехода на форму составления заказа
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -62,6 +68,7 @@ namespace Garage
             AddDealForm.Show();
         }
 
+        //Кнопка перехода на форму просмотра, удаления заказов, экспорта данных а word
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -69,12 +76,14 @@ namespace Garage
             DelDealForm.Show();
         }
 
+        //Кнопка перехода на форму экспорта в excel
         private void button5_Click(object sender, EventArgs e)
         {
             Form OutputInfoForm = new Form6();
             OutputInfoForm.ShowDialog();
         }
 
+        //Кнопка перехода на форму информации о разработчике
         private void button6_Click(object sender, EventArgs e)
         {
             Form CreatorInfoForm = new Form7();

@@ -57,9 +57,9 @@
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(778, 3);
+            this.button1.Location = new System.Drawing.Point(775, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 39);
+            this.button1.Size = new System.Drawing.Size(175, 38);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -70,9 +70,9 @@
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(586, 3);
+            this.button2.Location = new System.Drawing.Point(583, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 39);
+            this.button2.Size = new System.Drawing.Size(186, 38);
             this.button2.TabIndex = 2;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -86,7 +86,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(387, 45);
+            this.label1.Size = new System.Drawing.Size(385, 44);
             this.label1.TabIndex = 3;
             this.label1.Text = "label1";
             // 
@@ -95,9 +95,9 @@
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(396, 3);
+            this.button3.Location = new System.Drawing.Point(394, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 39);
+            this.button3.Size = new System.Drawing.Size(183, 38);
             this.button3.TabIndex = 4;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
@@ -112,7 +112,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.46575F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.53425F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 192F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.button3, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
@@ -122,7 +122,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(953, 45);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(953, 44);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // Form5

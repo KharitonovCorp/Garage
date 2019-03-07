@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Garage
 {
+    //Форма представления информации об разработчике
     public partial class Form7 : Form
     {
-        //Форма представления информации об разработчике
-        //Готова
+        //инициализация элементов формы и компонентов   
         public Form7()
         {
             InitializeComponent();
@@ -22,12 +22,14 @@ namespace Garage
             button1.Text = "Назад";
         }
 
+        //метод перехода на главную форму
         private void GoBackToMainForm()
         {
             this.Close();
             Form MainForm = new Form1();
         }
 
+        //Кнопка перехода на главную форму
         private void button1_Click(object sender, EventArgs e)
         {
             GoBackToMainForm();
