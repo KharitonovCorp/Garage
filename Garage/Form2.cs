@@ -178,6 +178,7 @@ namespace Garage
                     sql.Connection = oleDbConn;
                     sql.ExecuteNonQuery();
                 }
+                //Закрытие подключения
                 oleDbConn.Close();
             }
             catch (Exception ex)
@@ -230,7 +231,7 @@ namespace Garage
                     dt.Columns["mechanic_rank"].ColumnName = "разряд";
                     dataGridView1.DataSource = dt;
                 }
-
+                //Закрытие подключения
                 oleDbConn.Close();
             }
             catch (Exception ex)

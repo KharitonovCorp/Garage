@@ -82,3 +82,4 @@ C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.csproj
 C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.exe
 C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.pdb
+C:\Users\khari\Source\Repos\Garage\Garage\obj\Debug\Garage.csproj.ResolveComReference.cache
