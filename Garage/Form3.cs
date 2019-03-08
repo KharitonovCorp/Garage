@@ -89,7 +89,7 @@ namespace Garage
                     sql.ExecuteNonQuery();
                     //Ввод количества записи в текстовый элемент на форме
                     label14.Text = "Кол-во записей: " + (int)sql.ExecuteScalar();
-
+                    //Закрытие подключения
                     oleDbConn.Close();
                 }
                 catch (Exception ex)
@@ -112,7 +112,7 @@ namespace Garage
                     sql.ExecuteNonQuery();
                     //Вывод количества записей в текстовый элемент на форму
                     label15.Text = "Кол-во записей: " + (int)sql.ExecuteScalar();
-
+                    //Закрытие подключения
                     oleDbConn.Close();
                 }
                 catch (Exception ex)
@@ -175,7 +175,7 @@ namespace Garage
                     sql.Connection = oleDbConn;
                     sql.ExecuteNonQuery();
                 }
-
+                //Закрытие подключения
                 oleDbConn.Close();
             }
             catch (Exception ex)
@@ -273,6 +273,7 @@ namespace Garage
                     sql.Connection = oleDbConn;
                     sql.ExecuteNonQuery();
                 }
+                //Закрытие подключения
                 oleDbConn.Close();
             }
             catch (Exception ex)
@@ -325,7 +326,7 @@ namespace Garage
                     dt.Columns["mechanic_rank"].ColumnName = "разряд";
                     dataGridView1.DataSource = dt;
                 }
-
+                //Закрытие подключения
                 oleDbConn.Close();
             }
             catch (Exception ex)

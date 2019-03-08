@@ -90,8 +90,9 @@ namespace Garage
                     + " (repair_id, mechanic_id, car_id, repair_date, repair_time, repair_cost) VALUES (" +
                     Convert.ToInt32(id) + "," + Convert.ToInt32(a[0]) + "," + Convert.ToInt32(b[0]) + ",'" + repair_date + "','" + repair_time + "'," +
                     Convert.ToInt32(repair_cost) + ");", OleDbcon1);
-
+                //Исполнение запроса
                 sql1.ExecuteNonQuery();
+                //Закрытие подключения
                 OleDbcon1.Close();
             }
             catch (Exception ex)
@@ -135,6 +136,7 @@ namespace Garage
                     comboBox2.Items.Add(reader2["id"] + " " + reader2["номер"] + " " + reader2["марка"].ToString() + " " + reader2["модель"].ToString());
                 }
                 reader2.Close();
+                //Закрытие подключения
                 OleDbcon2.Close();
             }
             catch (Exception ex)

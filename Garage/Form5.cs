@@ -54,7 +54,7 @@ namespace Garage
                 sql.ExecuteNonQuery();
 
                 label1.Text = "Кол-во записей: " + (int)sql.ExecuteScalar();
-
+                //Закрытие подключения
                 oleDbConn.Close();
             }
             catch (Exception ex)
@@ -83,7 +83,7 @@ namespace Garage
                 da.Fill(dt);
 
                 dataGridView1.DataSource = dt;
-
+                //Закрытие подключения
                 oleDbConn.Close();
             }
             catch (Exception ex)
@@ -192,6 +192,7 @@ namespace Garage
             }
             //Прекращение ввода
             reader.Close();
+            //Закрытие подключения
             OleDbcon1.Close();
         }
 
