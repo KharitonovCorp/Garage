@@ -96,11 +96,11 @@
             // 
             this.tabPage1.Controls.Add(this.tableLayoutPanel1);
             this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 40);
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(6);
-            this.tabPage1.Size = new System.Drawing.Size(934, 469);
+            this.tabPage1.Size = new System.Drawing.Size(934, 475);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -193,7 +193,7 @@
             this.textBox11.Location = new System.Drawing.Point(639, 87);
             this.textBox11.MaxLength = 3;
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(138, 38);
+            this.textBox11.Size = new System.Drawing.Size(138, 32);
             this.textBox11.TabIndex = 19;
             // 
             // label14
@@ -216,7 +216,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(639, 128);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(138, 39);
+            this.comboBox1.Size = new System.Drawing.Size(138, 33);
             this.comboBox1.TabIndex = 13;
             this.comboBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FullNoInput);
             // 
@@ -252,7 +252,7 @@
             this.textBox1.Location = new System.Drawing.Point(246, 3);
             this.textBox1.MaxLength = 9;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 38);
+            this.textBox1.Size = new System.Drawing.Size(237, 32);
             this.textBox1.TabIndex = 3;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextNoInput);
             // 
@@ -264,7 +264,7 @@
             this.textBox10.Location = new System.Drawing.Point(639, 44);
             this.textBox10.MaxLength = 3;
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(138, 38);
+            this.textBox10.Size = new System.Drawing.Size(138, 32);
             this.textBox10.TabIndex = 17;
             // 
             // label2
@@ -299,7 +299,7 @@
             this.textBox2.Location = new System.Drawing.Point(246, 44);
             this.textBox2.MaxLength = 50;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(237, 38);
+            this.textBox2.Size = new System.Drawing.Size(237, 32);
             this.textBox2.TabIndex = 5;
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberNoInput);
             // 
@@ -323,7 +323,7 @@
             this.textBox3.Location = new System.Drawing.Point(246, 87);
             this.textBox3.MaxLength = 50;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(237, 38);
+            this.textBox3.Size = new System.Drawing.Size(237, 32);
             this.textBox3.TabIndex = 7;
             this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberNoInput);
             // 
@@ -347,7 +347,7 @@
             this.textBox4.Location = new System.Drawing.Point(246, 128);
             this.textBox4.MaxLength = 50;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(237, 38);
+            this.textBox4.Size = new System.Drawing.Size(237, 32);
             this.textBox4.TabIndex = 9;
             this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NumberNoInput);
             // 
@@ -359,7 +359,7 @@
             this.textBox5.Location = new System.Drawing.Point(639, 3);
             this.textBox5.MaxLength = 3;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(138, 38);
+            this.textBox5.Size = new System.Drawing.Size(138, 32);
             this.textBox5.TabIndex = 11;
             this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextNoInput);
             // 
@@ -405,11 +405,11 @@
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel2);
             this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 40);
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(6);
-            this.tabPage2.Size = new System.Drawing.Size(934, 469);
+            this.tabPage2.Size = new System.Drawing.Size(934, 475);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -482,7 +482,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(697, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(214, 39);
+            this.comboBox2.Size = new System.Drawing.Size(214, 33);
             this.comboBox2.TabIndex = 28;
             this.comboBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FullNoInput);
             // 
@@ -544,7 +544,7 @@
             this.textBox6.Location = new System.Drawing.Point(237, 3);
             this.textBox6.MaxLength = 9;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(228, 38);
+            this.textBox6.Size = new System.Drawing.Size(228, 32);
             this.textBox6.TabIndex = 20;
             this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextNoInput);
             // 
@@ -568,7 +568,7 @@
             this.textBox7.Location = new System.Drawing.Point(237, 49);
             this.textBox7.MaxLength = 50;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(228, 38);
+            this.textBox7.Size = new System.Drawing.Size(228, 32);
             this.textBox7.TabIndex = 22;
             // 
             // textBox9
@@ -579,7 +579,7 @@
             this.textBox9.Location = new System.Drawing.Point(237, 136);
             this.textBox9.MaxLength = 4;
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(228, 38);
+            this.textBox9.Size = new System.Drawing.Size(228, 32);
             this.textBox9.TabIndex = 26;
             this.textBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextNoInput);
             // 
@@ -615,7 +615,7 @@
             this.textBox8.Location = new System.Drawing.Point(237, 95);
             this.textBox8.MaxLength = 71;
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(228, 38);
+            this.textBox8.Size = new System.Drawing.Size(228, 32);
             this.textBox8.TabIndex = 24;
             // 
             // dataGridView2
@@ -633,7 +633,7 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 530);
             this.ControlBox = false;
