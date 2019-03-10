@@ -68,7 +68,6 @@ C:\Users\Admin\Documents\GitHub\Garage\Garage\obj\Debug\Garage.pdb
 C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\bin\Debug\Garage.exe.config
 C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\bin\Debug\Garage.exe
 C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\bin\Debug\Garage.pdb
-C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.csprojAssemblyReference.cache
 C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.csproj.ResolveComReference.cache
 C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.Form1.resources
 C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.Form2.resources
@@ -83,3 +82,4 @@ C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.csproj
 C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.exe
 C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.pdb
 C:\Users\khari\Source\Repos\Garage\Garage\obj\Debug\Garage.csproj.ResolveComReference.cache
+C:\Users\Admin\Source\Repos\KharitonovCorp\Garage\Garage\obj\Debug\Garage.csprojAssemblyReference.cache

@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using Word = Microsoft.Office.Interop.Word;
+using System.IO;
 
 namespace Garage
 {
     //Форма вывода в word и удаления заказов
     public partial class Form5 : Form
     {
+        private readonly string FileName = Directory.GetCurrentDirectory() + @"\\template.docx";
+
         //Инициализация переменных, используемых в дальнейшем
         string repair = "repair";
         string temp = "";
@@ -173,23 +176,23 @@ namespace Garage
             sql1.ExecuteNonQuery();
             OleDbDataReader reader = sql1.ExecuteReader();
             //Инициализация элемента word и его визуализация
-            Word.Application wordApp = new Word.Application();
-            Word.Document doc = wordApp.Documents.Add();
-            Word.Range range = doc.Range();
-            wordApp.Visible = true;
-
+            var wordApp = new Word.Application();
+            wordApp.Visible = false;
+            var wordDocument = wordApp.Documents.Open(FileName);
             while (reader.Read())
             {
                 //Ввод полученной из бд информации в word
-                range.Text = "Номер сделки: "+ reader["id"].ToString() +
-                "\nФамилия мастера: " + reader["фамилия мастера"].ToString() +
-                "\nИмя мастера: " + reader["имя мастера"].ToString() +
-                "\nОтчество: " + reader["отчество"].ToString() +
-                "\nМодель авто: " + reader["модель авто"].ToString() +
-                "\nМарка авто: " + reader["марка авто"].ToString() +
-                "\nДата работы: " + reader["дата работы"].ToString() +
-                "\nЦена: " + reader["цена"].ToString() + " руб";
+                wordDocument.Bookmarks["id"].Range.Text = reader["id"].ToString();
+                wordDocument.Bookmarks["surname"].Range.Text = reader["фамилия мастера"].ToString();
+                wordDocument.Bookmarks["name"].Range.Text = reader["имя мастера"].ToString();
+                wordDocument.Bookmarks["patronimyc"].Range.Text = reader["отчество"].ToString();
+                wordDocument.Bookmarks["model"].Range.Text = reader["модель авто"].ToString();
+                wordDocument.Bookmarks["mark"].Range.Text = reader["марка авто"].ToString();
+                wordDocument.Bookmarks["date"].Range.Text = reader["дата работы"].ToString();
+                wordDocument.Bookmarks["cost"].Range.Text = reader["цена"].ToString();
             }
+            //Просмотр документа
+            wordApp.Visible = true;
             //Прекращение ввода
             reader.Close();
             //Закрытие подключения
