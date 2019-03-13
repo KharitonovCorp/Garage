@@ -50,15 +50,15 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.45602F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.54397F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(415, 300);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(415, 316);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(3, 244);
+            this.button1.Location = new System.Drawing.Point(3, 257);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(409, 53);
+            this.button1.Size = new System.Drawing.Size(409, 56);
             this.button1.TabIndex = 3;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -73,7 +73,7 @@
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.label1.Size = new System.Drawing.Size(409, 241);
+            this.label1.Size = new System.Drawing.Size(409, 254);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -82,7 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 328);
+            this.ClientSize = new System.Drawing.Size(434, 351);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
