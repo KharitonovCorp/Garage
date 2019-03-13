@@ -88,6 +88,7 @@ namespace Garage
                 da.Fill(dt);
 
                 dataGridView1.DataSource = dt;
+                dataGridView1.Columns[0].Visible = false;
                 //Закрытие подключения
                 oleDbConn.Close();
             }

@@ -315,6 +315,7 @@ namespace Garage
                     dt.Columns["car_type"].ColumnName = "тип";
                     dt.Columns["car_year"].ColumnName = "год выпуска";
                     dataGridView2.DataSource = dt;
+                    dataGridView2.Columns[0].Visible = false;
                 }
                 //Если контрол механиков
                 if (table == "mechanic")
@@ -327,6 +328,7 @@ namespace Garage
                     dt.Columns["mechanic_exp"].ColumnName = "стаж";
                     dt.Columns["mechanic_rank"].ColumnName = "разряд";
                     dataGridView1.DataSource = dt;
+                    dataGridView1.Columns[0].Visible = false;
                 }
                 //Закрытие подключения
                 oleDbConn.Close();
