@@ -26,6 +26,7 @@ namespace Garage
             InitializeComponent();
             InitializeInterface();
             comboboxInput();
+            date_limitation();
         }
 
         //Метод инициализации интерфейса
@@ -58,6 +59,12 @@ namespace Garage
                 comboBox2.Text = "";
                 dateTimePicker1.Text = "";
             }
+        }
+
+        //Метод ограничения ввода предыдущей даты
+        public void date_limitation()
+        {
+            dateTimePicker1.MinDate = DateTime.Now;
         }
 
         //Метод добавления данных
