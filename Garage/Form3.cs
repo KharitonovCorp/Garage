@@ -138,7 +138,7 @@ namespace Garage
                 textBox5.Text = "";
                 textBox10.Text = "";
                 textBox11.Text = "";
-                comboBox1.Text = "";
+                comboBox1.SelectedIndex = -1;
             }
             //контрола с машинами
             else if (table == "car")
@@ -293,6 +293,8 @@ namespace Garage
         {
             try
             {
+                dataGridView1.AllowUserToAddRows = false;
+                dataGridView2.AllowUserToAddRows = false;
                 //Подключение к бд
                 string con = "Provider= Microsoft.Jet.OLEDB.4.0; Data Source=Garage.mdb;";
                 OleDbConnection oleDbConn = new OleDbConnection(con);

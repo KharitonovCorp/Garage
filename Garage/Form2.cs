@@ -198,6 +198,8 @@ namespace Garage
         {
             try
             {
+                dataGridView1.AllowUserToAddRows = false;
+                dataGridView2.AllowUserToAddRows = false;
                 //Подключение к бд
                 string con = "Provider= Microsoft.Jet.OLEDB.4.0; Data Source=Garage.mdb;";
                 OleDbConnection oleDbConn = new OleDbConnection(con);

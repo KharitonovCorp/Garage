@@ -35,7 +35,7 @@ namespace Garage
             this.Text = "Составление заказа";
             button1.Text = "Назад";
             button2.Text = "Добавить";
-            button3.Text = "Очистить поля ввода";
+            button3.Text = "Очистить";
             label1.Text = "Выберите механика";
             label2.Text = "Выберите авто";
             label3.Text = "Выберите дату работы";
