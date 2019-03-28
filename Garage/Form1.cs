@@ -44,6 +44,7 @@ namespace Garage
             result = MessageBox.Show("Вы действительно желаете выйти?", "Внимание!", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
+
                 System.Windows.Forms.Application.Exit();
             }
         }
@@ -71,7 +72,7 @@ namespace Garage
             Form AddDealForm = new Form4();
             AddDealForm.Show();
         }
-
+       
         //Кнопка перехода на форму просмотра, удаления заказов, экспорта данных а word
         private void button4_Click(object sender, EventArgs e)
         {
@@ -204,6 +205,10 @@ namespace Garage
                 mechanic.Rows.AutoFit();
                 repair.Columns.AutoFit();
                 repair.Rows.AutoFit();
+                //Сохранение бд
+                ExcelApp.GetSaveAsFilename();
+                //Выход из excel
+                ExcelApp.Quit();
             }
             catch (Exception ex)
             {

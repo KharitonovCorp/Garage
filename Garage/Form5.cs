@@ -22,7 +22,7 @@ namespace Garage
 
         //Инициализация переменных, используемых в дальнейшем
         string repair = "repair";
-        string temp = "";
+        public string temp = "";
 
         //Инициализация компонентов формы и интерфейса
         public Form5()
@@ -201,6 +201,11 @@ namespace Garage
             reader.Close();
             //Закрытие подключения
             OleDbcon1.Close();
+            //Сохранение документа word
+            string dir = Directory.GetCurrentDirectory();
+            wordApp.ActiveDocument.SaveAs(FileName: dir +"/отчет.docx");
+            //Закрытие документа word
+            wordApp.Quit();
         }
 
         //Кнопка вывода в word
