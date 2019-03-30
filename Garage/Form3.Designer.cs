@@ -198,6 +198,7 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(214, 32);
             this.textBox11.TabIndex = 35;
+            this.textBox11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextNoInput);
             // 
             // label14
             // 
@@ -295,6 +296,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(214, 32);
             this.textBox10.TabIndex = 33;
+            this.textBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextNoInput);
             // 
             // label2
             // 
@@ -427,7 +429,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(6);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(6);
-            this.tabPage2.Size = new System.Drawing.Size(937, 484);
+            this.tabPage2.Size = new System.Drawing.Size(937, 499);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;

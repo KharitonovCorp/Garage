@@ -38,7 +38,7 @@ namespace Garage
             //Контрол механики
             button1.Text = "Назад";
             button2.Text = "Добавить";
-            button3.Text = "Очистить поля ввода";
+            button3.Text = "Очистить";
             label1.Text = "Номер механика";
             label2.Text = "Фамилия";
             label3.Text = "Имя";
@@ -52,7 +52,7 @@ namespace Garage
             //Контрол машины
             button6.Text = "Назад";
             button5.Text = "Добавить";
-            button4.Text = "Очистить поля ввода";
+            button4.Text = "Очистить";
             label7.Text = "Номер авто";
             label8.Text = "Марка";
             label9.Text = "Модель";
